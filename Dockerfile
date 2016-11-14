@@ -10,7 +10,7 @@ ENV LANG en_GB.UTF-8
 ENV LC_CTYPE en_GB.UTF-8
 
 # Fix sh
-RUN rm /bin/sh && ln -s /bin/bash /bin/sh
+RUN rm -rf /bin/sh && ln -s /bin/bash /bin/sh
 
 # Install dependencies
 RUN apt-get update && \
