@@ -1,5 +1,5 @@
 tomcat:
-  image: kevell/tom
+  image: kevell/tomcat
   ports:
   - "8080:8080"
   - "9009:8009"
