@@ -23,7 +23,7 @@ add-apt-repository -y ppa:webupd8team/java && \
 apt-get update && \
 apt-get install -y oracle-java8-installer wget unzip tar && \
 rm -rf /var/lib/apt/lists/* && \
-rm -rf /var/cache/oracle-jdk8-installer
+rm -rf /var/cache/oracle-jdk8-installer && \
 
 # Define commonly used JAVA_HOME variable
 ENV JAVA_HOME /usr/lib/jvm/java-8-oracle
@@ -35,7 +35,7 @@ mv /opt/apache-tomcat-${v8.0.38} /opt/tomcat && \
 rm /tmp/tomcat.tgz && \
 rm -rf /opt/tomcat/webapps/examples && \
 rm -rf /opt/tomcat/webapps/docs && \
-rm -rf /opt/tomcat/webapps/ROOT
+rm -rf /opt/tomcat/webapps/ROOT && \
 
 # Add admin/admin user
 ADD tomcat-users.xml /opt/tomcat/conf/
